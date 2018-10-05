@@ -5,28 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- <link rel="stylesheet" href="add.css"> -->
+    <!-- <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="add.css"> -->
     <style>
-        .myclass {
+        a[class|="mylink"]{
+            background-color: blueviolet;
+        }
+        /*.myclass {
             background-color:blueviolet;
         }
         #myid {
             color:blueviolet;
         }
-        a:hover {
-            background-color:blueviolet;
-        }
         dd::before {
             content: "Hello!";
             font-size: 24pt;
         }
-        /* a {
+         
+        a:hover {
+            background-color:blueviolet;
+        }
+        a {
             background-color:blueviolet;
         } */
+        p:first-of-type::first-letter {
+            font-size: 18pt;
+            color:red;
+
+        }
     </style>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="news">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, fugiat.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, fugiat.</p>
+        </div>
+        <div class="news">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, fugiat.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, fugiat.</p>
+        </div>
+    </div>
+    <a href="file:///D:/Programming/Workspace/www/WebSite_ITech/lb/ITech1_Lab1/index.html" class = "mylink">Link1</a><br>
+    <a href="#" target="_blank" class = "mylink-warning">Link2</a><br>
+    <a href="https://knureigs.github.io/itech/" target="_self">Link3</a><br>
+    <a href="http://dec.nure.ua/" target="_blank">Link4</a><br>
+    <a href="https://ru.wikipedia.org">Link5</a><br><br><br>
+    
     <form action="" method="post">
         <input type="text" name="login" id="login" value="Qwerty" class="myclass">
         <input type="text" name="login2" id="login2" value="Qwerty2">
