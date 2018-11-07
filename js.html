@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            // document.write("<script>alert('Hello');<\/script>");
+            // function docWrite(str) {
+            //     document.write(str);
+            // }
+            function inputWrite(str) {
+                var qwerty = document.getElementById("qwerty");
+                qwerty.value = str;
+            }
+            function inputIncr() {
+                var qwerty = document.getElementById("qwerty");
+                qwerty.value = qwerty.value*1 + 1;
+            }
+    
+    
+            // document.write("Hello!");
+    
+    
+            // if(confirm("Need set username?")){
+            //     alert("Hell, " + prompt("Set your name:"));
+    
+            // }
+            // else {
+            //     alert("Hello, username!");
+            // }
+    
+    
+            // alert("Hello!");
+    
+    
+            // console.debug("dsgdfgd");
+    
+            // console.group();
+            // console.log("1.1 Hello!");
+            // console.log("1.2 Hello!");
+            // console.groupEnd();
+            // console.groupCollapsed();
+            // console.log("2.2 Hello!");
+            // console.log("2.2 Hello!");
+            // console.log("2.2 Hello!");
+            // console.groupEnd();
+    
+    
+            // console.warn("Hello!");
+            // console.info("Hello!");
+            // console.error("Hello!");
+            // console.log("Hello, %s!", "User");
+        
+        </script>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sequi!</div>
+    <!-- <input type="button" value="RESET ALL" onclick="inputWrite('Hello!')"> -->
+    <input type="button" value="RESET ALL" onclick="inputIncr()">
+    <input type="text" name="qwerty" id="qwerty" value="1">
+    
+</body>
+</html>
